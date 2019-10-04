@@ -1,0 +1,30 @@
+.project_container {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    border-bottom: 4px solid blue;
+
+}
+
+.project_image {
+    display: inline-block;
+    vertical-align: top;    
+    height: 200px;
+    width: 30%;
+    background-color: grey;
+}
+
+.project_tabs {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 200px;
+    width: 70%;
+}
+
+
+.nav-item {
+    width: 50%;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

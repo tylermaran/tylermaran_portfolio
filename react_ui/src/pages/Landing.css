@@ -1,0 +1,29 @@
+body {
+    background-image: url('../images/grid_background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.line_break {
+    border: 1px dotted white;
+    width: 80%;
+    margin: 40px 0 40px 10%;
+}
+
+.sub_title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.left {
+    display: inline-block;
+    width: 40%;
+    margin: 0 0 0 7.5%;
+}
+
+.right {
+    display: inline-block;
+    width: 40%;
+    margin: 0 0 0 5%;
+}

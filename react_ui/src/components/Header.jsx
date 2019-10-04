@@ -8,7 +8,8 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="header">
-            This is a header
+            <h1>Tyler Maran</h1>
+            <h2>I build things</h2>
         </div>
     )
 }
