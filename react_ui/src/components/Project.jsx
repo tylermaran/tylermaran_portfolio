@@ -1,31 +1,30 @@
 // Importing Dependencies
-import React, { useState } from 'react';
-import { Tab, Tabs } from 'react-bootstrap';
+import React from 'react';
 
 // Importing Styling
 import './Project.css';
 
-
-
 const Project = (props) => {
-	const [key, setKey] = useState('home');
-
+	// const [key, setKey] = useState('home');
+	const style = {
+		backgroundImage: 'url(' + props.image + ')'
+	}
 
 	return (
 		<div className="project_container">
-			<div className="project_image">
-
+			<div className="project_image" style={style}></div>
+			
+			<div className="project_detail">
+				<div className="visit">
+					<div className="link_logo"></div>
+					<div className="site_link">Visit</div>
+				</div>
+				<div className="github">
+					<div className="git_logo"></div>
+					<div className="git_link">&#60;Code/&#62;</div>
+				</div>
 			</div>
-			<div className="project_tabs">
-				<Tabs id="controlled-tab-example" activeKey={key} onSelect={k => setKey(k)}>
-					<Tab eventKey="home" title="Overview">
-						<p>Overview</p>
-					</Tab>
-					<Tab eventKey="profile" title="Under the hood">
-						<p>Under the hood</p>
-					</Tab>
-				</Tabs>
-			</div>
+			
 		</div>
 	);
 }

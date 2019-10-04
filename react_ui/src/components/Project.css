@@ -1,30 +1,76 @@
 .project_container {
     width: 100%;
     margin: 10px 0 20px 0;
-    border-bottom: 4px solid blue;
-
 }
 
 .project_image {
     display: inline-block;
     vertical-align: top;    
-    height: 200px;
-    width: 30%;
-    background-color: grey;
+    height: 250px;
+    width: 100%;
+    /* background-image: url('../images/izac_front.png'); */
+    background-position: center;
+    background-size: cover;
 }
 
-.project_tabs {
+.project_detail {
+    border-top: 4px solid rgb(0, 0, 120);
+}
+
+
+.github, .visit {
     display: inline-block;
-    vertical-align: top;
-    background-color: white;
-    height: 200px;
-    width: 70%;
+    width: 40%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; 
+    transition: font-size .25s;
+    -webkit-transition: font-size .25s;
+
+
+    vertical-align: middle;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px;
+    margin: 10px 0 0 5%;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
 }
 
+.github:hover, .visit:hover {
+    font-size: 18px;
+    background-color: rgb(27, 27, 27); 
+    cursor: pointer;
 
-.nav-item {
-    width: 50%;
-    background-color: rgb(43, 43, 43);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+}
+
+.git_link, .site_link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+.git_logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    background-image: url('../images/github.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.link_logo {
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 30px;
+    width: 30px;
+    background-image: url('../images/link.png');
+    background-position: center;
+    background-size: cover;
 }

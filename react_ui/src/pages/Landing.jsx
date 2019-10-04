@@ -9,25 +9,29 @@ import Footer from '../components/Footer';
 // Importing Styling
 import './Landing.css';
 
+import izac from '../images/izac_front.png';
+import club from '../images/club_map.png';
+import outspoke from '../images/outspoke.png';
+import dwayne from '../images/dwayne.png';
+import cadl from '../images/cadl.png';
+
 const Landing = () => {
 
     return (
         <div className="landing">
             <Header/>
 
-            <hr className="line_break"/>
-
             <div className="left">
                 <h3 className="sub_title">
                     Full Stack
                 </h3>
-                <Project/>
-                <Project/>
+                <Project image={cadl}/>
+                <Project image={club}/>
 
                 <h3 className="sub_title">
                     For fun
                 </h3>
-                <Project/>
+                <Project image={izac}/>
                 <Project/>
             </div>
 
@@ -35,8 +39,8 @@ const Landing = () => {
                 <h3 className="sub_title">
                     Front End
                 </h3>
-                <Project/>
-                <Project/>
+                <Project image={outspoke}/>
+                <Project image={dwayne}/>
 
                 <h3 className="sub_title">
                     Serverless

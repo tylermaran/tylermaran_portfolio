@@ -1,3 +1,21 @@
 .header {
     color: white;
+    font-family: 'Courier New', Courier, monospace; 
 }
+
+.my_name {
+    /* display: inline; */
+    margin: 80px 0 0 10%;
+}
+.subtext {
+    /* display: inline; */
+    margin: 0 0 0 10%;
+}
+
+
+.line_break {
+    border: 1px dotted white;
+    width: 80%;
+    margin: 0 0 40px 10%;
+}
+
