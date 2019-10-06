@@ -3,20 +3,31 @@
     margin: 10px 0 20px 0;
 }
 
+.desktop_image {
+    height: 275px;
+    width: 100%;
+    padding: 8px 5px 10px 5px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
 .project_image {
     display: inline-block;
     vertical-align: top;    
-    height: 250px;
+    height: 100%;
     width: 100%;
-    /* background-image: url('../images/izac_front.png'); */
-    background-position: center;
-    background-size: cover;
+    background-position: top, top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
-.project_detail {
-    border-top: 4px solid rgb(0, 0, 120);
+.phone_container {
+    height: 100%;
+    width: 100%;
+    padding: 10% 0 0 70%;
+    /* transform: translate(-100%, -100%) */
 }
-
 
 .github, .visit {
     display: inline-block;

@@ -1,6 +1,9 @@
 // Importing Dependencies
 import React from 'react';
 
+// Importing Components
+import Phone from './Phone';
+
 // Importing Styling
 import './Project.css';
 
@@ -12,7 +15,13 @@ const Project = (props) => {
 
 	return (
 		<div className="project_container">
-			<div className="project_image" style={style}></div>
+			<div className="desktop_image">
+				<div className="project_image" style={style}>
+					<div className="phone_container">
+						<Phone/>
+					</div>
+				</div>
+			</div>
 			
 			<div className="project_detail">
 				<div className="visit">

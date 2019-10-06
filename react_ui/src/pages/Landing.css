@@ -10,7 +10,7 @@ body {
         font-family: 'Courier New', Courier, monospace;
         font-size: 18px;
     }
-    
+
     .left {
         display: block;
         width: 90%;
@@ -42,7 +42,5 @@ body {
         width: 40%;
         margin: 0 0 0 5%;
     }
-
-
 }
 
