@@ -1,46 +1,39 @@
-body {
+/* body {
     background-image: url('../images/grid_background.png');
     background-size: cover;
     background-position: center;
+} */
+
+.sub_title {
+    color: white;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 0 0 0 5%;
+    border-bottom: 1px dotted white;
 }
 
 @media only screen and (max-width: 700px) {
-    .sub_title {
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 18px;
+
+    .project_container {
+        width: 90%;
+        display: block;
+        margin: 0 5% 0 5%;
     }
 
-    .left {
-        display: block;
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
-    
-    .right {
-        display: inline-block;
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
 }
 
 @media only screen and (min-width: 700px) {
     .sub_title {
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 18px;
+        display: block;
+        width: 20%;
     }
 
-    .left {
-        display: inline-block;
+    .project_container {
         width: 40%;
-        margin: 0 0 0 7.5%;
-    }
-    
-    .right {
         display: inline-block;
-        width: 40%;
-        margin: 0 0 0 5%;
+        margin: 0 2.5% 0 5%;
     }
+
 }
 

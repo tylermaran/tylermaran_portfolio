@@ -14,7 +14,7 @@ const Project = (props) => {
 	}
 
 	return (
-		<div className="project_container">
+		<div className="project">
 			<div className="desktop_image">
 				<div className="project_image" style={style}>
 					<div className="phone_container">

@@ -21,39 +21,45 @@ const Landing = () => {
         <div className="landing">
             <Header/>
 
-            <div className="left">
+            {/* <div className="left"> */}
                 <h3 className="sub_title">
                     Full Stack
                 </h3>
-                <Project image={cadl}/>
-                <Project image={club}/>
-
+                <div className="project_container">
+                    <Project image={cadl}/>
+                </div>
+                <div className="project_container">
+                    <Project image={club}/>
+                </div>
+                
                 <h3 className="sub_title">
                     For fun
                 </h3>
-                <Project image={izac}/>
-                <Project/>
-            </div>
+                <div className="project_container">
+                    <Project image={izac}/>
+                </div>
+                <div className="project_container">
+                    <Project image={club}/>
+                </div>
 
-            <div className="right">
+            {/* </div> */}
+
+            {/* <div className="right"> */}
                 <h3 className="sub_title">
                     Front End
                 </h3>
+                <div className="project_container">
+
                 <Project image={outspoke}/>
+                </div>
+                <div className="project_container">
+
                 <Project image={dwayne}/>
+                </div>
 
-                <h3 className="sub_title">
-                    Serverless
-                </h3>
-                <Project/>
-                <Project/>
-            </div>
-
-            
-
+            {/* </div> */}
 
             <Footer/>
-
 
         </div>
     )
