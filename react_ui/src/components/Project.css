@@ -4,7 +4,7 @@
 }
 
 .desktop_image {
-    height: 275px;
+    height: 100%;
     width: 100%;
     padding: 8px 5px 10px 5px;
     background-color: black;
