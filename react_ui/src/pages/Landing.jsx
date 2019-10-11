@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../components/Header'
 import Project from '../components/Project';
 import Footer from '../components/Footer';
+import About from '../components/About';
 
 // Importing Styling
 import './Landing.css';
@@ -20,7 +21,7 @@ const Landing = () => {
     return (
         <div className="landing">
             <Header/>
-
+            <About/>
             {/* <div className="left"> */}
                 <h3 className="sub_title">
                     Full Stack

@@ -9,6 +9,19 @@
     float: right;
 }
 
+.linkedin_portfolio {
+   
+}
+
+.linkedin_logo {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('../images/linkedin.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .line_break {
     border: 1px dotted white;
     width: 80%;
