@@ -15,6 +15,7 @@ import club from '../images/club_map.png';
 import outspoke from '../images/outspoke.png';
 import dwayne from '../images/dwayne.png';
 import cadl from '../images/cadl.png';
+import phone from '../images/club_mobile.png';
 
 const Landing = () => {
 
@@ -27,20 +28,20 @@ const Landing = () => {
                     Full Stack
                 </h3>
                 <div className="project_container">
-                    <Project image={cadl}/>
+                    <Project image={cadl} phone_image={phone}/>
                 </div>
                 <div className="project_container">
-                    <Project image={club}/>
+                    <Project image={club} phone_image={phone}/>
                 </div>
                 
                 <h3 className="sub_title">
                     For fun
                 </h3>
                 <div className="project_container">
-                    <Project image={izac}/>
+                    <Project image={izac} phone_image={phone}/>
                 </div>
                 <div className="project_container">
-                    <Project image={club}/>
+                    <Project image={club} phone_image={phone}/>
                 </div>
 
             {/* </div> */}
@@ -51,11 +52,11 @@ const Landing = () => {
                 </h3>
                 <div className="project_container">
 
-                <Project image={outspoke}/>
+                <Project image={outspoke} phone_image={phone}/>
                 </div>
                 <div className="project_container">
 
-                <Project image={dwayne}/>
+                <Project image={dwayne} phone_image={phone}/>
                 </div>
 
             {/* </div> */}
