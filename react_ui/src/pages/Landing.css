@@ -12,17 +12,17 @@
     width: 30%;
 }
 
-.all_button, .featured_button {
+.all_button,
+.featured_button {
     display: inline-block;
     width: 50%;
     font-size: 16px;
     height: 28px;
     overflow: hidden;
     color: white;
-    font-family: 'Courier New', Courier, monospace; 
-    transition: font-size .25s;
-    -webkit-transition: font-size .25s;
-
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 0.25s;
+    -webkit-transition: font-size 0.25s;
 
     background-color: black;
     text-align: center;
@@ -35,9 +35,10 @@
     user-select: none; /* Non-prefixed version, currently */
 }
 
-.all_button:hover, .featured_button:hover {
+.all_button:hover,
+.featured_button:hover {
     font-size: 18px;
-    background-color: rgb(27, 27, 27); 
+    background-color: rgb(27, 27, 27);
     cursor: pointer;
 }
 
@@ -52,46 +53,51 @@
     border-bottom-right-radius: 20px;
 }
 
-
 .project_container {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
 }
+
 @keyframes fadein {
     from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
+        opacity: 0;
     }
     to {
         opacity: 1;
     }
 }
 
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .project_container {
@@ -101,15 +107,12 @@
     }
 }
 
-
 @media only screen and (min-width: 601px) {
-
     .project_container {
         width: 70%;
         display: block;
         margin: 0 15% 0 15%;
     }
-
 }
 
 @media only screen and (min-width: 750px) {
@@ -123,7 +126,6 @@
         display: inline-block;
         margin: 0 2.5% 0 5%;
     }
-
 }
 
 @media only screen and (min-width: 850px) {
@@ -138,6 +140,4 @@
         display: inline-block;
         margin: 0 -2% 0 10%;
     }
-
 }
-

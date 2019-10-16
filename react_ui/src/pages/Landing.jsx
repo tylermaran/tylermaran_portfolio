@@ -1,8 +1,8 @@
 // Importing Dependencies
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 // Importing Components
-import Header from '../components/Header'
+import Header from '../components/Header';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
 import About from '../components/About';
@@ -20,99 +20,98 @@ import cadl from '../images/cadl.png';
 import phone from '../images/club_mobile.png';
 
 const Landing = () => {
-
     const [featured, setFeatured] = useState(true);
 
-    const map_projects = (project) => {
+    const map_projects = project => {
         return (
             <div className="project_container" key={project.name}>
-                <Project image={project.desktop_image} phone_image={project.mobile_image}/>
+                <Project
+                    image={project.desktop_image}
+                    phone_image={project.mobile_image}
+                />
             </div>
         );
-    }
+    };
 
     let all_projects = projectData.map(map_projects);
 
     let projects = (
         <>
-            <h3 className="sub_title">
-                Full Stack
-            </h3>
+            <h3 className="sub_title">Full Stack</h3>
             <div className="project_container">
-                <Project image={cadl} phone_image={phone}/>
+                <Project image={cadl} phone_image={phone} />
             </div>
             <div className="project_container">
-                <Project image={club} phone_image={phone}/>
-            </div>
-            
-            <h3 className="sub_title">
-                For fun
-            </h3>
-            <div className="project_container">
-                <Project image={izac} phone_image={phone}/>
-            </div>
-            <div className="project_container">
-                <Project image={club} phone_image={phone}/>
+                <Project image={club} phone_image={phone} />
             </div>
 
-            <h3 className="sub_title">
-                Front End
-            </h3>
+            <h3 className="sub_title">For fun</h3>
             <div className="project_container">
-                <Project image={outspoke} phone_image={phone}/>
+                <Project image={izac} phone_image={phone} />
             </div>
             <div className="project_container">
-                <Project image={dwayne} phone_image={phone}/>
+                <Project image={club} phone_image={phone} />
+            </div>
+
+            <h3 className="sub_title">Front End</h3>
+            <div className="project_container">
+                <Project image={outspoke} phone_image={phone} />
+            </div>
+            <div className="project_container">
+                <Project image={dwayne} phone_image={phone} />
             </div>
         </>
-    )
+    );
 
     let all = (
         <>
-            <h3 className="sub_title">
-                All Projects
-            </h3>
+            <h3 className="sub_title">All Projects</h3>
             {all_projects}
-            
         </>
-    )
+    );
 
     let featured_highlight = (
         <div className="switcher">
-            <div className="featured_button" onClick={() => setFeatured(true)} style={{backgroundColor: "rgb(30,30,30)"}}>
+            <div
+                className="featured_button"
+                onClick={() => setFeatured(true)}
+                style={{ backgroundColor: 'rgb(30,30,30)' }}
+            >
                 Featured
             </div>
             <div className="all_button" onClick={() => setFeatured(false)}>
                 All Projects
             </div>
         </div>
-    )
+    );
 
     let all_highlight = (
         <div className="switcher">
             <div className="featured_button" onClick={() => setFeatured(true)}>
                 Featured
             </div>
-            <div className="all_button" onClick={() => setFeatured(false)} style={{backgroundColor: "rgb(30,30,30)"}}>
+            <div
+                className="all_button"
+                onClick={() => setFeatured(false)}
+                style={{ backgroundColor: 'rgb(30,30,30)' }}
+            >
                 All Projects
             </div>
         </div>
-    )
+    );
 
     return (
         <div className="landing">
-            <Header/>
-            <About/>
-            <br/>
-            
-            {featured? featured_highlight: all_highlight}
-            {featured? projects: all}            
+            <Header />
+            <About />
+            <br />
 
-            <Footer/>
+            {featured ? featured_highlight : all_highlight}
+            {featured ? projects : all}
 
+            <Footer />
         </div>
-    )
-
-}
+    );
+};
 
 export default Landing;
