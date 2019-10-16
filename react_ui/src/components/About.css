@@ -4,3 +4,7 @@
     margin: 0 0 0 10%;
     font-family: 'Courier New', Courier, monospace;
 }
+
+p {
+    margin: 2px 0 2px 0;
+}
