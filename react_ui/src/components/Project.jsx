@@ -10,7 +10,7 @@ import './Project.css';
 const Project = (props) => {
 	// const [key, setKey] = useState('home');
 	const style = {
-		backgroundImage: 'url(' + props.image + ')'
+		backgroundImage: 'url(' + props.project.desktop_image + ')'
 	}
 
 	return (
@@ -18,7 +18,7 @@ const Project = (props) => {
 			<div className="desktop_image">
 				<div className="project_image" style={style}>
 					<div className="phone_container">
-						<Phone image={props.phone_image}/>
+						<Phone image={props.project.mobile_image}/>
 					</div>
 				</div>
 			</div>

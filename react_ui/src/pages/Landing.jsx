@@ -10,14 +10,8 @@ import About from '../components/About';
 // Importing Styling
 import './Landing.css';
 
+// Importing JSON Data
 import projectData from '../projects.json';
-
-import izac from '../images/izac_front.png';
-import club from '../images/club_map.png';
-import outspoke from '../images/outspoke.png';
-import dwayne from '../images/dwayne.png';
-import cadl from '../images/cadl.png';
-import phone from '../images/club_mobile.png';
 
 const Landing = () => {
     const [featured, setFeatured] = useState(true);
@@ -25,10 +19,7 @@ const Landing = () => {
     const map_projects = project => {
         return (
             <div className="project_container" key={project.name}>
-                <Project
-                    image={project.desktop_image}
-                    phone_image={project.mobile_image}
-                />
+                <Project project={project} />
             </div>
         );
     };
@@ -39,26 +30,26 @@ const Landing = () => {
         <>
             <h3 className="sub_title">Full Stack</h3>
             <div className="project_container">
-                <Project image={cadl} phone_image={phone} />
+                <Project project={projectData[2]} />
             </div>
             <div className="project_container">
-                <Project image={club} phone_image={phone} />
+                <Project project={projectData[0]} />
             </div>
 
             <h3 className="sub_title">For fun</h3>
             <div className="project_container">
-                <Project image={izac} phone_image={phone} />
+                <Project project={projectData[3]} />
             </div>
             <div className="project_container">
-                <Project image={club} phone_image={phone} />
+                <Project project={projectData[5]} />
             </div>
 
             <h3 className="sub_title">Front End</h3>
             <div className="project_container">
-                <Project image={outspoke} phone_image={phone} />
+                <Project project={projectData[1]} />
             </div>
             <div className="project_container">
-                <Project image={dwayne} phone_image={phone} />
+                <Project project={projectData[4]} />
             </div>
         </>
     );

@@ -105,6 +105,10 @@
         display: block;
         margin: 0 7.5% 0 7%;
     }
+    .switcher {
+        width: 70%;
+        margin: 0 0 0 15%;
+    }
 }
 
 @media only screen and (min-width: 601px) {
