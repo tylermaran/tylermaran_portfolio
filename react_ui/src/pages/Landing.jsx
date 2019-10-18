@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
 import About from '../components/About';
+import Modal from '../components/Modal';
 
 // Importing Styling
 import './Landing.css';
@@ -15,14 +16,23 @@ import projectData from '../projects.json';
 
 const Landing = () => {
     const [featured, setFeatured] = useState(true);
+    const [modal, setModal] = useState(false);
+    const [modalData, setModalData] = useState(false);
 
     const map_projects = project => {
         return (
             <div className="project_container" key={project.name}>
-                <Project project={project} />
+                <Project project={project} function={handle_modal}/>
             </div>
         );
     };
+
+    const handle_modal = (project) => {
+        console.log(project);
+        setModal(!modal);
+        setModalData(project);
+        // document.body.style({"overflow":"hidden"});
+    }
 
     let all_projects = projectData.map(map_projects);
 
@@ -30,26 +40,26 @@ const Landing = () => {
         <>
             <h3 className="sub_title">Full Stack</h3>
             <div className="project_container">
-                <Project project={projectData[2]} />
+                <Project project={projectData[2]} function={handle_modal}/>
             </div>
             <div className="project_container">
-                <Project project={projectData[0]} />
+                <Project project={projectData[0]} function={handle_modal}/>
             </div>
 
             <h3 className="sub_title">For fun</h3>
             <div className="project_container">
-                <Project project={projectData[3]} />
+                <Project project={projectData[3]} function={handle_modal}/>
             </div>
             <div className="project_container">
-                <Project project={projectData[5]} />
+                <Project project={projectData[5]} function={handle_modal}/>
             </div>
 
             <h3 className="sub_title">Front End</h3>
             <div className="project_container">
-                <Project project={projectData[1]} />
+                <Project project={projectData[1]} function={handle_modal}/>
             </div>
             <div className="project_container">
-                <Project project={projectData[4]} />
+                <Project project={projectData[4]} function={handle_modal}/>
             </div>
         </>
     );
@@ -99,6 +109,7 @@ const Landing = () => {
 
             {featured ? featured_highlight : all_highlight}
             {featured ? projects : all}
+            {modal ? <Modal project={modalData} function={setModal}/> : <></>}
 
             <Footer />
         </div>

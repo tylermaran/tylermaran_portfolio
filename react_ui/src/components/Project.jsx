@@ -8,14 +8,13 @@ import Phone from './Phone';
 import './Project.css';
 
 const Project = (props) => {
-	// const [key, setKey] = useState('home');
 	const style = {
 		backgroundImage: 'url(' + props.project.desktop_image + ')'
 	}
 
 	return (
 		<div className="project">
-			<div className="desktop_image">
+			<div className="desktop_image" onClick={() => props.function(props.project)}>
 				<div className="project_image" style={style}>
 					<div className="phone_container">
 						<Phone image={props.project.mobile_image}/>
@@ -26,11 +25,11 @@ const Project = (props) => {
 			<div className="project_detail">
 				<div className="visit">
 					<div className="link_logo"></div>
-					<div className="site_link">Visit</div>
+					<a href={props.project.url} target='new'><div className="site_link">Visit</div></a>
 				</div>
 				<div className="github">
 					<div className="git_logo"></div>
-					<div className="git_link">&#60;Code/&#62;</div>
+					<a href={props.project.git_link} target='new'><div className="git_link">&#60;Code/&#62;</div></a>
 				</div>
 			</div>
 			

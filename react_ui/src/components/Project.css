@@ -12,6 +12,10 @@
     margin: 0 0 20px 0;
 }
 
+.desktop_image:hover {
+    cursor: pointer;
+}
+
 .project_image {
     display: inline-block;
     vertical-align: top;    

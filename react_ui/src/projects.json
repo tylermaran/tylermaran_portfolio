@@ -20,7 +20,7 @@
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke.png",
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke_mobile.png",
         "show_phone": "true",
-        "detail_image": "detail image",
+        "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke.png",
         "description": "B2B Cannibus dealer!",
         "detail": "Under the hood stuff",
         "additional_link": "extra info here!"
@@ -41,7 +41,7 @@
     {
         "name": "iZac: Robotic Bartender",
         "url": "https://github.com/tylermaran/izac",
-        "git_link": "git-link",
+        "git_link": "https://github.com/tylermaran/izac",
         "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_front.png",
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_front.png",
