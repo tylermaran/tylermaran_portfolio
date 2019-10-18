@@ -7,11 +7,6 @@
     border-bottom: 1px dotted white;
 }
 
-.switcher {
-    margin: 0 0 0 35%;
-    width: 30%;
-}
-
 .all_button,
 .featured_button {
     display: inline-block;
@@ -116,6 +111,11 @@
         width: 70%;
         display: block;
         margin: 0 15% 0 15%;
+    }
+    
+    .switcher {
+        margin: 0 0 0 35%;
+        width: 30%;
     }
 }
 
