@@ -11,12 +11,15 @@ import Testing from './pages/Testing';
 import './App.css';
 
 const App = () => {
+	
 	return (
 		<div className="App">
 			<Router>
 				<Switch>
 					<Route exact path='/' component={Landing}/>
 					<Route exact path='/testing' component={Testing}/>
+					<Route exact path='/recursion' component={Landing}/>
+					<Route component={Testing}/>
 
 				</Switch>
 			</Router>

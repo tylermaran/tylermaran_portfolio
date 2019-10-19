@@ -13,7 +13,7 @@
         "additional_link": "extra info here!"
     },
     {
-        "name": "OutSpoke",
+        "name": "OutSpoke.io",
         "url": "https://outspoke.io/",
         "git_link": "null",
         "private": "true",
@@ -26,7 +26,7 @@
         "additional_link": "extra info here!"
     },
     {
-        "name": "CADL",
+        "name": "CADL (CAD Library)",
         "url": "https://www.clubfinder.us/",
         "git_link": "https://github.com/tylermaran/cadl",
         "private": "false",
@@ -66,7 +66,7 @@
     },
     {
         "name": "In browser Bitcoin Miner",
-        "url": "https://www.tylermaran.com/",
+        "url": "/recursion",
         "git_link": "https://github.com/tylermaran/tylermaran",
         "private": "true",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png",

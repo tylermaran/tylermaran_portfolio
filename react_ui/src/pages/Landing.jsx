@@ -17,7 +17,7 @@ import projectData from '../projects.json';
 const Landing = () => {
     const [featured, setFeatured] = useState(true);
     const [modal, setModal] = useState(false);
-    const [modalData, setModalData] = useState(false);
+    const [modalData, setModalData] = useState('');
 
     const map_projects = project => {
         return (
@@ -31,7 +31,14 @@ const Landing = () => {
         console.log(project);
         setModal(!modal);
         setModalData(project);
-        // document.body.style({"overflow":"hidden"});
+  
+        document.body.style.overflow = "hidden";
+    }
+
+    const close_modal = () => {
+        document.body.style.overflow = "auto";
+        setModal(!modal);
+        setModalData('');
     }
 
     let all_projects = projectData.map(map_projects);
@@ -109,7 +116,7 @@ const Landing = () => {
 
             {featured ? featured_highlight : all_highlight}
             {featured ? projects : all}
-            {modal ? <Modal project={modalData} function={setModal}/> : <></>}
+            {modal ? <Modal project={modalData} function={close_modal}/> : <></>}
 
             <Footer />
         </div>
