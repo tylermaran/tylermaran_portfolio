@@ -6,8 +6,6 @@ import './Modal.css';
 
 
 const Modal = props => {
-    console.log(props);
-
 
     let fadein = {
         animation: 'fadein .5s',

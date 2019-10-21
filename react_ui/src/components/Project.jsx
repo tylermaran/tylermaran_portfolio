@@ -20,6 +20,7 @@ const Project = (props) => {
 						<Phone image={props.project.mobile_image}/>
 					</div>
 				</div>
+				<div className="project_name">{props.project.name}</div>
 			</div>
 			
 			<div className="project_detail">

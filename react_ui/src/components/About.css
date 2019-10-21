@@ -1,6 +1,7 @@
 .about {
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    clear: both;
 }
 
 p {
@@ -10,6 +11,10 @@ p {
 .about_link {
     border-bottom: .5px dotted white;
     font-style: italic;
+}
+
+.about_link:hover {
+    text-shadow: 1px 1px grey;
 }
 
 
@@ -25,7 +30,7 @@ p {
 @media only screen and (min-width: 601px) {
     .about {
         width: 80%;
-        margin: 0 0 0 10%;
+        margin: 40px 0 0 10%;
     }
 }
 

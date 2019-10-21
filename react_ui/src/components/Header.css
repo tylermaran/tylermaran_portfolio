@@ -30,10 +30,26 @@
 .line_break {
     border: 1px dotted white;
     width: 80%;
-    margin: 0 0 40px 10%;
+    margin: 0 0 0 10%;
     clear: both;
 }
 
+.email {
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+.resume {
+    float: right;
+    margin: 5px 10% 0 0;
+}
+
+.email:hover, .resume:hover {
+    outline: 0;
+    color: white;
+    text-shadow: 1px 1px grey;
+    border-bottom: 1px dotted white;
+}
 
 @media only screen and (max-width: 700px) {
  

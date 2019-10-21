@@ -28,7 +28,6 @@ const Landing = () => {
     };
 
     const handle_modal = (project) => {
-        console.log(project);
         setModal(!modal);
         setModalData(project);
   
