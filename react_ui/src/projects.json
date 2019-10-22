@@ -8,9 +8,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/club_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/club_detail.PNG",
-        "description": "It helps you find clubs!",
-        "detail": "Under the hood stuff",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Clubfinder.us is a listing platform designed to match users with Private Clubs and Golf Courses that meet their needs. I worked as the primary developer for ClubFinder ~6 months. Deployed and managed in AWS.",
+            "sub_points": [
+                "Representing 400+ clubs in California",
+                "Custom Content management system allows Club Managers to create, customize, and maintain their profiles.",
+                "Email server with automated notifications allows Club Managers to communicate to prospective customers through the application."
+            ]
+        },
+        "detail": {
+            "body": "React front end with Node/Express REST API. Deployed and Managed in AWS. Using S3 as data storage (~2000 images).",
+            "sub_points":[
+                "Horizontally scaled and load balanced with Nginx",
+                "Encrypting user data with BCrypt",
+                "Automated image crushing improves load times"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "OutSpoke.io",
@@ -21,9 +36,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke.png",
-        "description": "B2B Cannibus dealer!",
-        "detail": "Under the hood stuff",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "CADL (CAD Library)",
@@ -34,9 +64,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
-        "description": "An open source 3D Design library",
-        "detail": "Under the hood stuff",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "iZac: Robotic Bartender",
@@ -47,9 +92,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_front.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_pour.png",
-        "description": "Fully automated bartending robot!",
-        "detail": "Under the hood stuff",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "Dwayne Wilson Trucking",
@@ -60,9 +120,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/dwayne_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/dwayne_detail.PNG",
-        "description": "It helps you find clubs!",
-        "detail": "Under the hood stuff",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "In browser Bitcoin Miner",
@@ -73,9 +148,24 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png",
-        "description": "Disguised as your average developer portfolio, this bitcoin miner allows me to make a decent living by applying to millions of jobs!",
-        "detail": "This is a joke.",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "PubCrawlr",
@@ -86,8 +176,23 @@
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/pubcrawlr_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/pubcrawlr_desktop.png",
-        "description": "Plotting your optimal PubCrawl",
-        "detail": "A 24 hour hackathon project",
-        "additional_link": "extra info here!"
+        "description": {
+            "body": "Helps you find clubs!",
+            "sub_points": [
+                "Representing 400 clubs in California",
+                "More data",
+                "Last bit of data. I promise"
+            ]
+        },
+        "detail": {
+            "body": "",
+            "sub_points":[
+                "Enginx Load balancer",
+                "S3 Image storage",
+                "React Front End + Node/Express API"
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     }
 ]

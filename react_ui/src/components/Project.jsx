@@ -33,7 +33,6 @@ const Project = (props) => {
 					<a href={props.project.git_link} target='new'><div className="git_link">&#60;Code/&#62;</div></a>
 				</div>
 			</div>
-			
 		</div>
 	);
 }

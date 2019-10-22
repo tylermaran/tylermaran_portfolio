@@ -47,13 +47,16 @@ const Modal = props => {
                                     'url(' + props.project.desktop_image + ')',
                             }}
                         ></div>
-                                            <div className="modal_name">{props.project.name}</div>
+                        <div className="modal_name">{props.project.name}</div>
 
                     </div>
 
 
                     <div className="modal_description">
-                        <p>{props.project.description}</p>
+                        <p>{props.project.description.body}</p>
+                        <ul>{props.project.description.sub_points[0]}</ul>
+                        <ul>{props.project.description.sub_points[1]}</ul>
+                        <ul>{props.project.description.sub_points[2]}</ul>
                     </div>
 
                     <div className="modal_detail_image">
@@ -66,21 +69,10 @@ const Modal = props => {
                         ></div>
                     </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Qui, perferendis. Temporibus cumque, maiores culpa
-                        tenetur perspiciatis quod id laborum quos similique,
-                        quisquam nemo modi commodi voluptatibus hic dolorum,
-                        praesentium error. Ex corporis temporibus placeat.
-                        Natus, sunt totam! Error maxime perferendis
-                        reprehenderit hic porro ea ut excepturi libero officia.
-                        Odit consectetur placeat ea facilis corporis quasi
-                        molestiae cupiditate, expedita provident asperiores. Qui
-                        ad ipsam beatae assumenda iste doloremque vitae adipisci
-                        fugit alias omnis atque dolor ut officia aliquam, nihil
-                        vero nulla natus laborum iusto soluta necessitatibus
-                        dolorem ab! Earum, dolorum eaque?
-                    </p>
+                    <p>{props.project.detail.body}</p>
+                    <ul>{props.project.detail.sub_points[0]}</ul>
+                    <ul>{props.project.detail.sub_points[1]}</ul>
+                    <ul>{props.project.detail.sub_points[2]}</ul>
                 </div>
             </div>
         </div>
