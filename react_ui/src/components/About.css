@@ -4,10 +4,6 @@
     clear: both;
 }
 
-p {
-    margin: 2px 0 2px 0;
-}
-
 .about_link {
     border-bottom: .5px dotted white;
     font-style: italic;
@@ -25,12 +21,9 @@ p {
     }
 }
 
-
-
 @media only screen and (min-width: 601px) {
     .about {
         width: 80%;
         margin: 40px 0 0 10%;
     }
 }
-

@@ -20,7 +20,7 @@
             "body": "React front end with Node/Express REST API. Deployed and Managed in AWS. Using S3 as data storage (~2000 images).",
             "sub_points":[
                 "Horizontally scaled and load balanced with Nginx",
-                "Encrypting user data with BCrypt",
+                "Managing user data with BCrypt, and JWT validation.",
                 "Automated image crushing improves load times"
             ]
         },
@@ -144,24 +144,24 @@
         "url": "/recursion",
         "git_link": "https://github.com/tylermaran/tylermaran",
         "private": "true",
-        "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png",
+        "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png?versionId=oR1RAtQOJ9c7cI_IufWgRsAAxS2Dvug0",
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "Disguised as an ordinary portfolio page, this stealth bitcoin miner allows me to make a decent living by simply applying to thousands of jobs!",
             "sub_points": [
-                "Representing 400 clubs in California",
-                "More data",
-                "Last bit of data. I promise"
+                "Ok. The bitcoin thing was a joke.",
+                "But it is a pretty nice portfolio.",
+                ""
             ]
         },
         "detail": {
-            "body": "",
+            "body": "React Front end with a Node/Express server. Project details and images are all mapped from a central JSON file, making it easy to edit or upload new projects.",
             "sub_points":[
-                "Enginx Load balancer",
+                "AWS Deployed using Nginx Load balancer",
                 "S3 Image storage",
-                "React Front End + Node/Express API"
+                "Minimal dependencies and vanilla CSS"
             ]
         },
         "detail_link_title": "extra info here!",
