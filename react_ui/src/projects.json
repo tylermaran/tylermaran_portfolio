@@ -37,19 +37,19 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/outspoke.png",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "Outspoke.io provides both buyers and sellers with a platform to interact and list their products. I worked with OutSpoke.io for 2 months developing the product listing service and transition to a Node/React environment.",
             "sub_points": [
-                "Representing 400 clubs in California",
-                "More data",
-                "Last bit of data. I promise"
+                "React/Node development connected to existing PHP API",
+                "Developed search platform to query, filter, and display products.",
+                "User session management (product platform is members only)"
             ]
         },
         "detail": {
-            "body": "",
+            "body": "Worked alongside existing team to migrate from PHP Static Server",
             "sub_points":[
-                "Enginx Load balancer",
-                "S3 Image storage",
-                "React Front End + Node/Express API"
+                "Deployed with AWS Elastic Beanstalk",
+                "Session management with JWT",
+                "Google API for location based searching"
             ]
         },
         "detail_link_title": "extra info here!",
@@ -57,7 +57,7 @@
     },
     {
         "name": "CADL (CAD Library)",
-        "url": "https://www.clubfinder.us/",
+        "url": "https://www.cadl.io/",
         "git_link": "https://github.com/tylermaran/cadl",
         "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
@@ -65,22 +65,22 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "Designed and built CADL as an open source library for CAD files. Users can style and edit their 3D models in browser, create instructions, and share their designs.",
             "sub_points": [
-                "Representing 400 clubs in California",
-                "More data",
-                "Last bit of data. I promise"
+                "CADL uses three.js and a custom built file switcher to interpret and render a large variety of filetypes.",
+                "Currently supporting: .STL, .SVG, GCODE, .FBX, .DXF",
+                "GUI allows users to scale/position/color models, as well as lighting, skybox, and environment effects."
             ]
         },
         "detail": {
             "body": "",
             "sub_points":[
+                "Files are stored in AWS S3, and S3 Glacier to minimize storage costs on large / seldomly accessed files.",
                 "Enginx Load balancer",
-                "S3 Image storage",
-                "React Front End + Node/Express API"
+                "Currently supporting: .STL, .SVG, GCODE, .FBX, .DXF"
             ]
         },
-        "detail_link_title": "extra info here!",
+        "detail_link_title": "Try out the file viewer here:",
         "detail_link": "www.google.com"
     },
     {
@@ -93,19 +93,19 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_pour.png",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "A joint project for the annual SF Robitic bartender competition, iZac is a fully functional bar with ",
             "sub_points": [
-                "Representing 400 clubs in California",
-                "More data",
-                "Last bit of data. I promise"
+                "190 drink options (although some of those would be terrible)",
+                "React UI on Raspberry Pi Toucscreen",
+                "Using combination of Air Pressure and peristaltic pumps to control drink level."
             ]
         },
         "detail": {
-            "body": "",
+            "body": "React / Node / Python running on a Rasberry Pi 4. The react UI calls a Node API which handles bottle stats, and calls a Python microservice to control pins.",
             "sub_points":[
-                "Enginx Load balancer",
-                "S3 Image storage",
-                "React Front End + Node/Express API"
+                "PostgreSQL database using sequelize ORM",
+                "Tracks bottle fill level and adjusts pressure to equalize pour volumes",
+                "Lots of welding and woodworking as well"
             ]
         },
         "detail_link_title": "extra info here!",
@@ -121,19 +121,19 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/dwayne_detail.PNG",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "Landing page for Trucking / Demolition client. This is serverless application.",
             "sub_points": [
-                "Representing 400 clubs in California",
-                "More data",
+                "Optimized SEO and location based advertisements through Google Ads",                
+                "Uses Mailgun API to manage outgoing mail.",
                 "Last bit of data. I promise"
             ]
         },
         "detail": {
-            "body": "",
+            "body": "Not",
             "sub_points":[
-                "Enginx Load balancer",
-                "S3 Image storage",
-                "React Front End + Node/Express API"
+                "Much",
+                "Left",
+                "to say"
             ]
         },
         "detail_link_title": "extra info here!",
@@ -177,19 +177,19 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/pubcrawlr_desktop.png",
         "description": {
-            "body": "Helps you find clubs!",
+            "body": "Plotting your optimal PubCrawl using Google GeoLocation API and Yelp API",
             "sub_points": [
-                "Representing 400 clubs in California",
+                "24 Hour Hackathon project",
                 "More data",
                 "Last bit of data. I promise"
             ]
         },
         "detail": {
-            "body": "",
+            "body": "Future Plans: refactor this page into a react native application to take advantage of GeoFencing capabilities",
             "sub_points":[
-                "Enginx Load balancer",
-                "S3 Image storage",
-                "React Front End + Node/Express API"
+                "Needs",
+                "More",
+                "Detail"
             ]
         },
         "detail_link_title": "extra info here!",
