@@ -19,7 +19,7 @@
 
 .project_image {
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top;
     height: 100%;
     width: 100%;
     background-position: top, top;
@@ -40,7 +40,7 @@
     margin: -2.3rem 0 0 0;
     padding: 2px 0 2px 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: background-color .25s;
+    transition: background-color 0.25s;
 
     -webkit-clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
     clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
@@ -51,13 +51,16 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.github, .visit {
+.github,
+.github_private,
+.visit {
     display: inline-block;
     width: 40%;
     color: white;
-    font-family: 'Courier New', Courier, monospace; 
-    transition: font-size .25s;
-    -webkit-transition: font-size .25s;
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 0.25s;
+    -webkit-transition: font-size 0.25s;
+    white-space: nowrap;
 
     vertical-align: middle;
     background-color: black;
@@ -73,23 +76,29 @@
     user-select: none; /* Non-prefixed version, currently */
 }
 
-.github:hover, .visit:hover {
+.github:hover,
+.visit:hover {
     font-size: 18px;
-    background-color: rgb(27, 27, 27); 
+    background-color: rgb(27, 27, 27);
     cursor: pointer;
 }
 
-.git_link, .site_link {
+.git_link,
+.site_link {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10%;
 }
 
+.github_private {
+    background-color: rgb(40, 40, 40);
+}
+
 .git_logo {
     display: inline-block;
     vertical-align: middle;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-image: url('../images/github.png');
     background-position: center;
     background-size: cover;
@@ -98,9 +107,15 @@
 .link_logo {
     display: inline-block;
     vertical-align: middle;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-image: url('../images/link.png');
     background-position: center;
     background-size: cover;
+}
+
+@media only screen and (max-width:1000px){
+    .github, .github_private, .visit {
+        font-size: .9rem;
+    }
 }

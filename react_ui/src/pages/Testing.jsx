@@ -10,25 +10,18 @@ import Footer from '../components/Footer';
 import './Testing.css';
 
 const Testing = () => {
-
     return (
         <div className="Testing">
-            <Header/>
+            <Header />
             <div className="content">
-
                 <div className="container">
-                    <Phone/>
-                    
+                    <Phone />
                 </div>
-
             </div>
-            
-            <Footer/>
 
-
+            <Footer />
         </div>
-    )
-
-}
+    );
+};
 
 export default Testing;

@@ -1,6 +1,6 @@
 .header {
     color: white;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .links {
@@ -15,7 +15,7 @@
 }
 
 .linkedin_portfolio {
-   display: inline-block;
+    display: inline-block;
 }
 
 .linkedin_logo {
@@ -44,7 +44,8 @@
     margin: 5px 10% 0 0;
 }
 
-.email:hover, .resume:hover {
+.email:hover,
+.resume:hover {
     outline: 0;
     color: white;
     text-shadow: 1px 1px grey;
@@ -78,4 +79,3 @@
         display: inline-block;
     }
 }
-

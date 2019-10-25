@@ -11,7 +11,8 @@
     color: white;
 }
 
-.footer_resume, .footer_email {
+.footer_resume,
+.footer_email {
     display: inline-block;
     float: none;
     margin: 40px 5px 5px 5px;

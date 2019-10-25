@@ -5,14 +5,13 @@
 }
 
 .about_link {
-    border-bottom: .5px dotted white;
+    border-bottom: 0.5px dotted white;
     font-style: italic;
 }
 
 .about_link:hover {
     text-shadow: 1px 1px grey;
 }
-
 
 @media only screen and (max-width: 600px) {
     .about {

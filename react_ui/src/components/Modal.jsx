@@ -4,9 +4,7 @@ import React, { useState } from 'react';
 // Importing Styles
 import './Modal.css';
 
-
 const Modal = props => {
-
     let fadein = {
         animation: 'fadein .5s',
         MozAnimation: 'fadein .5s',
@@ -50,15 +48,19 @@ const Modal = props => {
                         <div className="modal_name">{props.project.name}</div>
                     </div>
                     <div className="project_detail">
-				<div className="visit">
-					<div className="link_logo"></div>
-					<a href={props.project.url} target='new'><div className="site_link">Visit</div></a>
-				</div>
-				<div className="github">
-					<div className="git_logo"></div>
-					<a href={props.project.git_link} target='new'><div className="git_link">&#60;Code/&#62;</div></a>
-				</div>
-			</div>
+                        <div className="visit">
+                            <div className="link_logo"></div>
+                            <a href={props.project.url} target="new">
+                                <div className="site_link">Visit</div>
+                            </a>
+                        </div>
+                        <div className="github">
+                            <div className="git_logo"></div>
+                            <a href={props.project.git_link} target="new">
+                                <div className="git_link">&#60;Code/&#62;</div>
+                            </a>
+                        </div>
+                    </div>
 
                     <div className="modal_description">
                         <p>{props.project.description.body}</p>
@@ -80,7 +82,7 @@ const Modal = props => {
                     </div>
                     <div className="modal_description">
                         <p>{props.project.detail.body}</p>
-                        <ul>    
+                        <ul>
                             <li>{props.project.detail.sub_points[0]}</li>
                             <li>{props.project.detail.sub_points[1]}</li>
                             <li>{props.project.detail.sub_points[2]}</li>
