@@ -56,12 +56,12 @@
 .visit {
     display: inline-block;
     width: 40%;
+    height: 30px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     transition: font-size 0.25s;
     -webkit-transition: font-size 0.25s;
     white-space: nowrap;
-
     vertical-align: middle;
     background-color: black;
     border-radius: 20px;

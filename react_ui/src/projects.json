@@ -18,7 +18,7 @@
         },
         "detail": {
             "body": "React front end with Node/Express REST API. Deployed and Managed in AWS. Using S3 as data storage (~2000 images).",
-            "sub_points":[
+            "sub_points": [
                 "Horizontally scaled and load balanced with Nginx",
                 "Managing user data with BCrypt, and JWT validation.",
                 "Automated image crushing improves load times"
@@ -46,7 +46,7 @@
         },
         "detail": {
             "body": "Worked alongside existing team to migrate from PHP Static Server",
-            "sub_points":[
+            "sub_points": [
                 "Deployed with AWS Elastic Beanstalk",
                 "Session management with JWT",
                 "Google API for location based searching"
@@ -74,7 +74,7 @@
         },
         "detail": {
             "body": "",
-            "sub_points":[
+            "sub_points": [
                 "Files are stored in AWS S3, and S3 Glacier to minimize storage costs on large / seldomly accessed files.",
                 "Enginx Load balancer",
                 "Currently supporting: .STL, .SVG, GCODE, .FBX, .DXF"
@@ -102,7 +102,7 @@
         },
         "detail": {
             "body": "React / Node / Python running on a Rasberry Pi 4. The react UI calls a Node API which handles bottle stats, and calls a Python microservice to control pins.",
-            "sub_points":[
+            "sub_points": [
                 "PostgreSQL database using sequelize ORM",
                 "Tracks bottle fill level and adjusts pressure to equalize pour volumes",
                 "Lots of welding and woodworking as well"
@@ -123,18 +123,13 @@
         "description": {
             "body": "Landing page for Trucking / Demolition client. This is serverless application.",
             "sub_points": [
-                "Optimized SEO and location based advertisements through Google Ads",                
-                "Uses Mailgun API to manage outgoing mail.",
-                "Last bit of data. I promise"
+                "Optimized SEO and location based advertisements through Google Ads",
+                "Uses Mailgun API to manage outgoing mail."
             ]
         },
         "detail": {
-            "body": "Not",
-            "sub_points":[
-                "Much",
-                "Left",
-                "to say"
-            ]
+            "body": "",
+            "sub_points": []
         },
         "detail_link_title": "extra info here!",
         "detail_link": "www.google.com"
@@ -143,7 +138,7 @@
         "name": "In browser Bitcoin Miner",
         "url": "/recursion",
         "git_link": "https://github.com/tylermaran/tylermaran",
-        "private": "true",
+        "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png?versionId=oR1RAtQOJ9c7cI_IufWgRsAAxS2Dvug0",
         "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_mobile.png",
         "show_phone": "true",
@@ -158,7 +153,7 @@
         },
         "detail": {
             "body": "React Front end with a Node/Express server. Project details and images are all mapped from a central JSON file, making it easy to edit or upload new projects.",
-            "sub_points":[
+            "sub_points": [
                 "AWS Deployed using Nginx Load balancer",
                 "S3 Image storage",
                 "Minimal dependencies (other than react) and vanilla CSS"
@@ -178,19 +173,11 @@
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/pubcrawlr_desktop.png",
         "description": {
             "body": "Plotting your optimal PubCrawl using Google GeoLocation API and Yelp API",
-            "sub_points": [
-                "24 Hour Hackathon project",
-                "More data",
-                "Last bit of data. I promise"
-            ]
+            "sub_points": ["24 Hour Hackathon project"]
         },
         "detail": {
             "body": "Future Plans: refactor this page into a react native application to take advantage of GeoFencing capabilities",
-            "sub_points":[
-                "Needs",
-                "More",
-                "Detail"
-            ]
+            "sub_points": []
         },
         "detail_link_title": "extra info here!",
         "detail_link": "www.google.com"

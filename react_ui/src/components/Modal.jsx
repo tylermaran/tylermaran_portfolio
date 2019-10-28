@@ -28,6 +28,14 @@ const Modal = props => {
         }, 400);
     };
 
+    const subpoints = item => {
+        return <li>{item}</li>;
+    };
+    let description_points = props.project.description.sub_points.map(
+        subpoints
+    );
+    let detail_points = props.project.detail.sub_points.map(subpoints);
+
     return (
         <div className="modal" style={style}>
             <div
@@ -64,11 +72,7 @@ const Modal = props => {
 
                     <div className="modal_description">
                         <p>{props.project.description.body}</p>
-                        <ul>
-                            <li>{props.project.description.sub_points[0]}</li>
-                            <li>{props.project.description.sub_points[1]}</li>
-                            <li>{props.project.description.sub_points[2]}</li>
-                        </ul>
+                        <ul>{description_points}</ul>
                     </div>
 
                     <div className="modal_detail_image">
@@ -82,11 +86,7 @@ const Modal = props => {
                     </div>
                     <div className="modal_description">
                         <p>{props.project.detail.body}</p>
-                        <ul>
-                            <li>{props.project.detail.sub_points[0]}</li>
-                            <li>{props.project.detail.sub_points[1]}</li>
-                            <li>{props.project.detail.sub_points[2]}</li>
-                        </ul>
+                        <ul>{detail_points}</ul>
                     </div>
                 </div>
             </div>
