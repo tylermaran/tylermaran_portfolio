@@ -153,7 +153,7 @@
             "sub_points": [
                 "Ok. The bitcoin thing was a joke.",
                 "But it is a pretty nice portfolio.",
-                ""
+                "Made to be easy to fork and provide your own content. Check out the repo for more info."
             ]
         },
         "detail": {
@@ -161,7 +161,7 @@
             "sub_points":[
                 "AWS Deployed using Nginx Load balancer",
                 "S3 Image storage",
-                "Minimal dependencies and vanilla CSS"
+                "Minimal dependencies (other than react) and vanilla CSS"
             ]
         },
         "detail_link_title": "extra info here!",
