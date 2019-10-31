@@ -57,7 +57,7 @@
     },
     {
         "name": "CADL (CAD Library)",
-        "url": "https://www.cadl.io/",
+        "url": "http://cadl.us-east-2.elasticbeanstalk.com/",
         "git_link": "https://github.com/tylermaran/cadl",
         "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
