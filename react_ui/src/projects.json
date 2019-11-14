@@ -135,7 +135,7 @@
         "detail_link": "www.google.com"
     },
     {
-        "name": "In browser Bitcoin Miner",
+        "name": "Portfolio Page",
         "url": "/recursion",
         "git_link": "https://github.com/tylermaran/tylermaran",
         "private": "false",
@@ -144,11 +144,10 @@
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/tyler_desktop.png",
         "description": {
-            "body": "Disguised as an ordinary portfolio page, this stealth bitcoin miner allows me to make a decent living by simply applying to thousands of jobs!",
+            "body": "My portfolio page. You know. The page that you are on now.",
             "sub_points": [
-                "Ok. The bitcoin thing was a joke.",
-                "But it is a pretty nice portfolio.",
-                "Made to be easy to fork and provide your own content. Check out the repo for more info."
+                "Made to be easy to fork and provide your own content. Check out the repo for instructions on cloning this page.",
+                "Page detail is populated via a single JSON document that can be quickly edited to add your own projects."
             ]
         },
         "detail": {

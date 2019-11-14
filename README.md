@@ -1,7 +1,7 @@
 # tylermaran
 All things Tyler
 
-This is a basic portfolio page I designed in reactjs. All of the projects pull from a `projects.json` file located in the ./react_ui folder.
+This is a basic portfolio page I designed in reactjs. All of the projects pull from a `projects.json` file located in the ./react_ui folder. [master/react_ui/src/projects.json](https://github.com/tylermaran/tylermaran/blob/master/react_ui/src/projects.json)
 
 *Below is an exaple of the project.json formatting:* 
 >"name": "Example Page",
