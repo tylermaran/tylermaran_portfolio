@@ -17,7 +17,7 @@ const About = props => {
                 Library:{' '}
                 <a
                     className="about_link"
-                    href="http://cadl.us-east-2.elasticbeanstalk.com/"
+                    href="http://cadl.io/"
                     target="new"
                 >
                     CADL.io
