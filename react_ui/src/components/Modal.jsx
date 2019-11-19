@@ -29,7 +29,7 @@ const Modal = props => {
     };
 
     const subpoints = item => {
-        return <li>{item}</li>;
+        return <li key={item}>{item}</li>;
     };
     let description_points = props.project.description.sub_points.map(
         subpoints

@@ -110,6 +110,29 @@
         },
         "detail_link_title": "extra info here!",
         "detail_link": "www.google.com"
+    },{
+        "name": "NoiseBridge Crypto Wallet",
+        "url": "http://nbcrypto-env.kemkdbiknt.us-east-2.elasticbeanstalk.com/",
+        "git_link": "https://github.com/tylermaran/nbcrypto",
+        "private": "false",
+        "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/nb_crypto.png",
+        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/nb_crypto_mobile.png",
+        "show_phone": "true",
+        "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/nb_crypto_detail.png",
+        "description": {
+            "body": "Monitoring page for CryptoCurrency Assets. This page was built for NoiseBridge, but is designed to handle a variety of cryptocurrency wallets.",
+            "sub_points": [
+                "This site uses React front end with a basic Nodejs server. All calculations are done client side.",
+                "The page is set to query several Blockchain APIs for the ETH/BTC balance, as well as fetching the current exchange rate for each currency.",
+                "Chart is rendered using Chart.js"
+            ]
+        },
+        "detail": {
+            "body": "Using Qrcodejs, the site reders a QR code link to each wallet address provided for easy lookup",
+            "sub_points": []
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     },
     {
         "name": "Dwayne Wilson Trucking",

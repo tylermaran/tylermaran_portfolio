@@ -57,7 +57,7 @@ const Landing = () => {
                 <Project project={projectData[3]} function={handle_modal} />
             </div>
             <div className="project_container">
-                <Project project={projectData[5]} function={handle_modal} />
+                <Project project={projectData[4]} function={handle_modal} />
             </div>
 
             <h3 className="sub_title">Front End</h3>
@@ -65,7 +65,7 @@ const Landing = () => {
                 <Project project={projectData[1]} function={handle_modal} />
             </div>
             <div className="project_container">
-                <Project project={projectData[4]} function={handle_modal} />
+                <Project project={projectData[5]} function={handle_modal} />
             </div>
         </>
     );
