@@ -61,7 +61,7 @@
         "git_link": "https://github.com/tylermaran/cadl",
         "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
-        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
+        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/cadl.png",
         "description": {
@@ -89,7 +89,7 @@
         "git_link": "https://github.com/tylermaran/izac",
         "private": "false",
         "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_front.png",
-        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_front.png",
+        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_mobile.png",
         "show_phone": "true",
         "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/izac_pour.png",
         "description": {
@@ -110,7 +110,8 @@
         },
         "detail_link_title": "extra info here!",
         "detail_link": "www.google.com"
-    },{
+    },
+    {
         "name": "NoiseBridge Crypto Wallet",
         "url": "http://nbcrypto-env.kemkdbiknt.us-east-2.elasticbeanstalk.com/",
         "git_link": "https://github.com/tylermaran/nbcrypto",
@@ -199,6 +200,29 @@
         },
         "detail": {
             "body": "Future Plans: refactor this page into a react native application to take advantage of GeoFencing capabilities",
+            "sub_points": []
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
+    },
+    {
+        "name": "Lowkey.gg (native app)",
+        "url": "https://lowkey.gg/",
+        "git_link": "https://lowkey.gg/",
+        "private": "true",
+        "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/lowkey_detail.png",
+        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/lowkey_mobile.png",
+        "show_phone": "false",
+        "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/lowkey_front.png",
+        "description": {
+            "body": "I worked with Lowkey.gg to build an Electron.js recording and streaming application for competitive gaming.",
+            "sub_points": [
+                "Built out highly performant streaming capture tool for Windows.",
+                "Automatically captures games based on combination of image recognition and process monitoring."
+            ]
+        },
+        "detail": {
+            "body": "React front end ported into the Electron application allows for seamless integration between desktop and web app.",
             "sub_points": []
         },
         "detail_link_title": "extra info here!",

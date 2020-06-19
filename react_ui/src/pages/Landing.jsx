@@ -19,7 +19,7 @@ const Landing = () => {
     const [modal, setModal] = useState(false);
     const [modalData, setModalData] = useState('');
 
-    const map_projects = project => {
+    const map_projects = (project) => {
         return (
             <div className="project_container" key={project.name}>
                 <Project project={project} function={handle_modal} />
@@ -27,7 +27,7 @@ const Landing = () => {
         );
     };
 
-    const handle_modal = project => {
+    const handle_modal = (project) => {
         setModal(!modal);
         setModalData(project);
 
@@ -46,10 +46,10 @@ const Landing = () => {
         <>
             <h3 className="sub_title">Full Stack</h3>
             <div className="project_container">
-                <Project project={projectData[2]} function={handle_modal} />
+                <Project project={projectData[8]} function={handle_modal} />
             </div>
             <div className="project_container">
-                <Project project={projectData[0]} function={handle_modal} />
+                <Project project={projectData[2]} function={handle_modal} />
             </div>
 
             <h3 className="sub_title">For fun</h3>

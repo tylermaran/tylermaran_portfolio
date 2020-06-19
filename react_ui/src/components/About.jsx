@@ -4,7 +4,7 @@ import React from 'react';
 // Importing Styles
 import './About.css';
 
-const About = props => {
+const About = (props) => {
     return (
         <div className="about">
             <p className="about_p">
@@ -15,10 +15,14 @@ const About = props => {
             </p>
 
             <p className="about_p">
-                Lately, I am involved in 3D design and published a FOSS CAD
-                Library:
-                <a className="about_link" href="http://cadl.io/" target="new">
-                    CADL.io
+                Actively building out a crowdfunding platform for open-source
+                development:&nbsp;
+                <a
+                    className="about_link"
+                    href="https://www.rysolv.com/"
+                    target="new"
+                >
+                    rysolv.com
                 </a>
             </p>
             <ul>

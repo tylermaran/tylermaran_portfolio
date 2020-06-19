@@ -1,5 +1,5 @@
 // Importing Dependencies
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 // Importing Components
 // import Header from '../components/Header';
@@ -13,23 +13,24 @@ class Testing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            message: ''
-        }
-      }
+            message: '',
+        };
+    }
 
     updateMessage(e) {
         this.setState({
-            message: e.target.value
+            message: e.target.value,
         });
     }
 
     render() {
         return (
-            <input type="text"
-            onChange={this.updateMessage.bind(this)}
-            value={this.state && this.state.message || ''}
+            <input
+                type="text"
+                onChange={this.updateMessage.bind(this)}
+                value={(this.state && this.state.message) || ''}
             />
-        )
+        );
     }
 }
 
