@@ -1,27 +1,36 @@
 // Importing Dependencies
-import React from 'react';
+import React, {Component} from 'react';
 
 // Importing Components
-import Header from '../components/Header';
-import Phone from '../components/Phone';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Phone from '../components/Phone';
+// import Footer from '../components/Footer';
 
 // Importing Styling
 import './Testing.css';
 
-const Testing = () => {
-    return (
-        <div className="Testing">
-            <Header />
-            <div className="content">
-                <div className="container">
-                    <Phone />
-                </div>
-            </div>
+class Testing extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            message: ''
+        }
+      }
 
-            <Footer />
-        </div>
-    );
-};
+    updateMessage(e) {
+        this.setState({
+            message: e.target.value
+        });
+    }
+
+    render() {
+        return (
+            <input type="text"
+            onChange={this.updateMessage.bind(this)}
+            value={this.state && this.state.message || ''}
+            />
+        )
+    }
+}
 
 export default Testing;
