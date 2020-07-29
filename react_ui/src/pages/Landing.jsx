@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 
 // Importing Components
-import Header from '../components/Header';
-import Project from '../components/Project';
-import Footer from '../components/Footer';
 import About from '../components/About';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import Modal from '../components/Modal';
+import PrimaryDetail from '../components/PrimaryDetail';
+import Project from '../components/Project';
 
 // Importing Styling
 import './Landing.css';
@@ -44,6 +45,14 @@ const Landing = () => {
 
     let projects = (
         <>
+            <h3 className="sub_title">Primary Focus</h3>
+            <div className="primaryWrapper">
+                <div className="project_container">
+                    <Project project={projectData[9]} function={handle_modal} />
+                </div>
+                <PrimaryDetail />
+            </div>
+
             <h3 className="sub_title">Full Stack</h3>
             <div className="project_container">
                 <Project project={projectData[8]} function={handle_modal} />

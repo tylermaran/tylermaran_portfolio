@@ -227,5 +227,33 @@
         },
         "detail_link_title": "extra info here!",
         "detail_link": "www.google.com"
+    },
+    {
+        "name": "Rysolv",
+        "url": "https://www.rysolv.com/",
+        "git_link": "https://github.com/rysolv/rysolv",
+        "private": "false",
+        "desktop_image": "https://tylermaran.s3.us-east-2.amazonaws.com/rysolv_detail.png",
+        "mobile_image": "https://tylermaran.s3.us-east-2.amazonaws.com/rysolv_mobile.png",
+        "show_phone": "true",
+        "detail_image": "https://tylermaran.s3.us-east-2.amazonaws.com/rysolv_desktop.png",
+        "description": {
+            "body": "Rysolv is a crowdfunding platform designed to accelerate work on open source projects. Users sponsor outstanding issues or feature requests in open source projects. Developers earn bounties by resolving them.",
+            "sub_points": [
+                "Users can fund open source projects issue by issue, and developers get paid for working on their passions",
+                "Whatever bounty is assigned to an issue will be automatically awarded to the developer on a successful pull request.",
+                "Allow developers to earn an income while advancing projects they use"
+            ]
+        },
+        "detail": {
+            "body": "React front end with Node/Express REST API. Deployed and Managed in AWS.",
+            "sub_points": [
+                "Rysolv is built on a React front end with a Node/Express/GraphQL API and a PostgreSQL database.",
+                "Payment processing uses the Stripe API and embedded Paypal Checkout.",
+                "Issues and Organization are imported using the Github API."
+            ]
+        },
+        "detail_link_title": "extra info here!",
+        "detail_link": "www.google.com"
     }
 ]
