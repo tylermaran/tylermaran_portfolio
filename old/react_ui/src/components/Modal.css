@@ -1,0 +1,228 @@
+.modal {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.modal_background {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.75);
+    clear: both;
+}
+
+.modal_body {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    left: 0;
+    top: 0;
+    height: 95%;
+    margin: 2.5% 0 2.5% 20%;
+    overflow-y: scroll;
+
+    width: 60%;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #2c5364,
+        #203a43,
+        #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #2c5364,
+        #203a43,
+        #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.modal_content {
+    height: auto;
+    width: 100%;
+    overflow-y: initial !important;
+    margin: 0 0 50px 0;
+}
+
+.modal_desktop_image {
+    width: 100%;
+    height: 30vw;
+    padding: 8px 5px 10px 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.modal_detail_image {
+    width: 60%;
+    height: 18vw;
+    padding: 8px 5px 10px 5px;
+    margin: 0 0 0 20%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.modal_project_image {
+    height: 100%;
+    width: 100%;
+    background-position: top, top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.modal_name {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+    height: 2rem;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: -2.5rem 0 3rem 5px;
+    padding: 2px 0 0 20px;
+    -webkit-clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+}
+
+.modal_description {
+    color: white;
+    width: 100%;
+    padding: 2% 5% 2% 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal_body {
+        min-height: 80%;
+        width: 90%;
+        margin: 10% 0 0 5%;
+    }
+
+    .modal_desktop_image {
+        width: 100%;
+        height: 50vw;
+        padding: 8px 5px 10px 5px;
+        background-color: black;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    .modal_detail_image {
+        width: 100%;
+        height: 50vw;
+        padding: 8px 5px 10px 5px;
+        background-color: black;
+        border-radius: 5px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .modal_body {
+        min-height: 80%;
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .modal_body {
+        min-height: 80%;
+        height: 90%;
+        margin: 5% 0 5% 15%;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .modal_body {
+        height: 90%;
+        margin: 2.5% 0 5% 20%;
+        width: 60%;
+    }
+}
+
+/* Fade in animation */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade out animation */
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeout {
+    /* Firefox */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    /* Safari and Chrome */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeout {
+    /* Opera */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

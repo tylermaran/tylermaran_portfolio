@@ -1,0 +1,121 @@
+.project {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+.desktop_image {
+    height: 100%;
+    width: 100%;
+    padding: 8px 5px 10px 5px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+.desktop_image:hover {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20);
+}
+
+.project_image {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background-position: top, top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.phone_container {
+    padding: 10% 0 0 75%;
+}
+
+.project_name {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.1rem;
+    height: 2rem;
+    max-width: 80%;
+    margin: -2.3rem 0 0 0;
+    padding: 2px 0 2px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.25s;
+
+    -webkit-clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 2% 100%);
+}
+
+.project_name:hover {
+    text-shadow: 1px 1px grey;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.github,
+.github_private,
+.visit {
+    display: inline-block;
+    width: 40%;
+    height: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 0.25s;
+    -webkit-transition: font-size 0.25s;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px;
+    margin: 10px 0 0 5%;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.github:hover,
+.visit:hover {
+    font-size: 18px;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+
+.git_link,
+.site_link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+.github_private {
+    background-color: rgb(40, 40, 40);
+}
+
+.git_logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/github.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.link_logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/link.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1000px){
+    .github, .github_private, .visit {
+        font-size: .9rem;
+    }
+}

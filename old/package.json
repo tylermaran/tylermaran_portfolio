@@ -1,0 +1,29 @@
+{
+  "name": "tylermaran",
+  "version": "1.0.0",
+  "description": "All things Tyler",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylermaran/tylermaran.git"
+  },
+  "keywords": [
+    "tyler",
+    "maran",
+    "themanmaran"
+  ],
+  "author": "Tyler Maran (tyler.maran@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylermaran/tylermaran/issues"
+  },
+  "homepage": "https://github.com/tylermaran/tylermaran#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

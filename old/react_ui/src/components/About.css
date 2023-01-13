@@ -1,0 +1,28 @@
+.about {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    clear: both;
+}
+
+.about_link {
+    border-bottom: 0.5px dotted white;
+    font-style: italic;
+}
+
+.about_link:hover {
+    text-shadow: 1px 1px grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        width: 90%;
+        margin: 0 0 0 5%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .about {
+        width: 80%;
+        margin: 40px 0 0 10%;
+    }
+}

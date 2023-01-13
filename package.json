@@ -1,29 +1,25 @@
 {
   "name": "tylermaran",
   "version": "1.0.0",
-  "description": "All things Tyler",
-  "main": "server.js",
+  "description": "blog",
+  "main": "index.js",
   "scripts": {
-    "test": "test",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylermaran/tylermaran.git"
+    "url": "git+https://github.com/tylermaran/tylermaran_portfolio.git"
   },
   "keywords": [
-    "tyler",
-    "maran",
-    "themanmaran"
+    "tyler"
   ],
-  "author": "Tyler Maran (tyler.maran@gmail.com)",
-  "license": "ISC",
+  "author": "tylermaran",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tylermaran/tylermaran/issues"
+    "url": "https://github.com/tylermaran/tylermaran_portfolio/issues"
   },
-  "homepage": "https://github.com/tylermaran/tylermaran#readme",
+  "homepage": "https://github.com/tylermaran/tylermaran_portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
+    "msgo": "0.0.3"
   }
 }
