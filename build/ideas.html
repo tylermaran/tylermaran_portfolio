@@ -1,0 +1,79 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	
+	<!-- Base meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Why, sometimes I've believed as many as six impossible things before breakfast." />
+	<meta name="language" content="english" />
+	<meta name="title" content="Ideas" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- OpenGraph -->
+	<meta property="og:description" content="Why, sometimes I've believed as many as six impossible things before breakfast." />
+	<meta property="og:image" content="undefined" />
+	<meta property="og:site_name" content="tyler" />
+	<meta property="og:title" content="Ideas" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="ideas.html" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Why, sometimes I've believed as many as six impossible things before breakfast." />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:title" content="Ideas" />
+	
+	<link rel="stylesheet" href=./assets/style.css>
+	<title>Ideas</title>
+	</head>
+	<body>
+	<article>
+	<h1 id="ideas">Ideas</h1>
+<p>I come up with ideas all the time. Way more than I could ever pursue. Rather than lock them in a shoebox to be forgotten, I think I&#39;ll put them out on the internet. All concepts are fair game. If you find something you like, then try to make it a reality!</p>
+<p>If you want to chat about any ideas, drop me a line <a href='https://twitter.com/TylerMaran' target='_blank'>@tylermaran</a></p>
+<h2 id="mr-roboto---a-robot-that-makes-raman-for-you">Mr. Roboto - A robot that makes raman for you</h2>
+<ul>
+<li>I&#39;m imagining a roadside raman stand. 6 seats. Humanoid robot (at least the upper half) serving up bowls of Raman 24 hours a day.</li>
+<li>Raman should be easier than most of the food robot attempts out there, it&#39;s 90% water after all (cheap raman I mean, not trying to insult the incredible craft of Raman).</li>
+<li>Probably not a great business idea. CafeX (and all it&#39;s competitors) failed after all. The world is just not ready for robotic food that isn&#39;t vending maching shaped. But it would be fun to build. And I can imagine showing up at 2 am and chatting with Mr. Roboto while serves me some raman.</li>
+</ul>
+<h2 id="authhawk---inserting-env-vars-at-runtime">AuthHawk - Inserting env vars at runtime</h2>
+<ul>
+<li>Most companies do a terrible job at sharing and managing <code>.env</code> variables. The idea is an <code>npm</code> package that pings a service with the server&#39;s private key, grabs a list of secret keys, and inserts them into the Node <code>process.env</code></li>
+<li>This does a couple things<ol>
+<li>No more slacking your env variablies back and forth. You just configure your keypair once, and then all the secrets live on a central server.</li>
+<li>No more having out of date secrets, it gets pulled every few seconds</li>
+<li>Easy to roll keys without impacting your dev team. It will auto pull the new keys when it polls for new keys.</li>
+<li>You don&#39;t have to manage a separate set of keys on Heroku, or AWS, or whatever. It&#39;ll still pull from the same source, just with a different Public/Private key pair for production vs. dev secrets.</li>
+</ol>
+</li>
+</ul>
+<h2 id="izac---robotic-bartender">iZac - robotic bartender</h2>
+<ul>
+<li><a href="https://tylermaran.github.io/izac/" target='_blank'>I actually built this one!</a> And it was glorious. But he eventually fell into disrepair and was uncermoniously turned into spare parts. Always an idea I meant to come back to. Learned a lot from the previous iteration, and have some good ideas for where to go with a future model.</li>
+<li>Business potential:<ul>
+<li>Self serve is cool and all, but raises a lot of potential problems (over consumption, underage, etc.). The real value is back of the bar. Say you&#39;re at a busy club and a sorority comes in and orders 15 vodka cranberrys - just hit Vodka-Cran x 15 and watch them all pop out.</li>
+<li>Music festivals / cruises - anything where people are carrying around that RFID wristband and have been ID&#39;d ahead of time. Solves two of the most annoying problems (id &amp; payments)</li>
+</ul>
+</li>
+</ul>
+<h2 id="pigeon---email-template-tool-with-built-in-sql-queries">Pigeon - Email template tool with built in SQL queries</h2>
+<ul>
+<li><a href="https://pigeon-dev.netlify.app/" target='_blank'>MVP up and running!</a></li>
+<li>Idea came up when I had to send a lot of one off emails to users at Rysolv. The flow always went something like:<ol>
+<li><code>SELECT first_name, email FROM users WHERE something = TRUE</code></li>
+<li>Copy paste the csv into mailchimp</li>
+<li>Template and send the email from mailchimp</li>
+</ol>
+</li>
+<li>So instead I built an email templating tool that had a built in SQL terminal.</li>
+</ul>
+
+	</article>
+	<footer>
+	
+	</footer>
+	</body>
+	</html>
+	
