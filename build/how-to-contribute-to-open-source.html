@@ -1,0 +1,146 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	
+	<!-- Base meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Contributing to open source is an awesome way to spend your time. You can make friends, better society, and learn a ton about different codebases. But it can be a bit daunting for beginners." />
+	<meta name="language" content="english" />
+	<meta name="title" content="Contributing to open source as a beginner [2022]" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- OpenGraph -->
+	<meta property="og:description" content="Contributing to open source is an awesome way to spend your time. You can make friends, better society, and learn a ton about different codebases. But it can be a bit daunting for beginners." />
+	<meta property="og:image" content="https://compassionate-saha-53a9e6.netlify.app/assets/mutombo_small.gif" />
+	<meta property="og:site_name" content="tyler" />
+	<meta property="og:title" content="Contributing to open source as a beginner [2022]" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="how-to-contribute-to-open-source.html" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Contributing to open source is an awesome way to spend your time. You can make friends, better society, and learn a ton about different codebases. But it can be a bit daunting for beginners." />
+	<meta name="twitter:image" content="https://compassionate-saha-53a9e6.netlify.app/assets/mutombo_small.gif" />
+	<meta name="twitter:title" content="Contributing to open source as a beginner [2022]" />
+	
+	<link rel="stylesheet" href=./assets/style.css>
+	<title>Contributing to open source as a beginner [2022]</title>
+	</head>
+	<body>
+	<article>
+	<h1 id="contributing-to-open-source-as-a-beginner">Contributing to open source as a beginner</h1>
+<p>Contributing to open source is an awesome way to spend your time. You can make friends, better society, and learn a ton about different codebases. But it can be a bit daunting for beginners.</p>
+<p>So I&#39;ve compiled the top technical (and social) tips to make your first OS contribution. If you feel any steps are missing or unclear, good news! <a href="https://github.com/rysolv/markdown_ssg/tree/rysolv">This blog is open source</a>. Go open an issue!</p>
+<h3 id="tldr">TLDR:</h3>
+<ol>
+<li>Find a small project with recent commits (last 2 months)</li>
+<li>Take a look at the CONTRIBUTING.md</li>
+<li>Fork the repo &amp; start coding</li>
+<li>Open a Pull Request to the original repo</li>
+<li>Incorporate feedback (and be patient)</li>
+<li>Merge &amp; deploy!</li>
+</ol>
+<h2 id="1-find-a-small-project-with-recent-commits">1. Find a small project with recent commits</h2>
+<p>Nothing is more demoralizing than spending time on a Pull Request that never gets merged in. Just do a quick check to see the most recent commits. As long as it&#39;s less than a few months, you&#39;re probably good.</p>
+<p>If it&#39;s been more than a year, I&#39;d recommend getting in touch with a maintainer (email, discord, etc.) before undertaking any work.</p>
+<p><img src="./assets/recent_commits.png" alt="recent github commits"></p>
+<p>And if this is your first contribution, maybe pick something a little smaller. Don&#39;t just look for a typo on the <code>react</code> repo. You won&#39;t be learning anything new, and there are much better projects that could use your time.</p>
+<h2 id="2-take-a-look-at-the-contributingmd">2. Take a look at the CONTRIBUTING.md</h2>
+<p>A lot of active repos (especially larger ones) will have a <code>CONTRIBUTING.md</code>. If they do, stop reading this blog and go follow their instructions.</p>
+<p>You&#39;ll likely also see a <code>.github</code> folder containing <code>PULL_REQUEST_TEMPLATE</code> and <code>ISSUE_TEMPLATE</code>. These are issue and pull request guidelines set by the maintainer. You&#39;ll see them pre-filled whenever you open a new Issue or PR.</p>
+<p>Make sure to follow these templates (even if it doesn&#39;t seem relevant). Sometimes you&#39;ll even encounter a bot that auto-closes issues that don&#39;t follow the template.</p>
+<p><img src="./assets/contributing_guidelines.png" alt="contributing guidelines"></p>
+<h2 id="3-fork-the-repo">3. Fork the repo</h2>
+<p>Click fork and follow the prompts.</p>
+<p><img src="./assets/fork.png" alt="fork"></p>
+<p>Navigate to your fork of the repo, and clone.</p>
+<p><img src="./assets/clone_repo.png" alt="clone_repo"></p>
+<p>And start coding!</p>
+<h2 id="4-open-a-pull-request-to-the-original-repo">4. Open a Pull Request to the original repo</h2>
+<p>You&#39;re now working on your fork of the repo. When you are ready to publish changes you&#39;ll be pushing to your GitHub, and then opening a pull request to the original repo.</p>
+<p>Remember, always Pull before you Push. With a fork, you&#39;ll need to merge any upstream changes into your repo before you create a pull request.</p>
+<p>You can do this in either the GitHUb UI, via the command line.</p>
+<h3 id="github-ui-easy">GitHub UI (easy)</h3>
+<h4 id="1-make-sure-your-repo-is-up-to-date">1. Make sure your repo is up to date</h4>
+<p><img src="./assets/fetch_upstream.png" alt="fetch_upstream"></p>
+<h4 id="2-open-a-pull-request">2. Open a pull request</h4>
+<p><img src="./assets/pull_request.png" alt="pull_request"></p>
+<h4 id="2-confirm-the-branch-and-give-a-detailed-description">2. Confirm the branch, and give a detailed description</h4>
+<p><img src="./assets/create_pull_request.png" alt="create_pull_request"></p>
+<h3 id="command-line-a-little-harder">Command Line (a little harder)</h3>
+<h4 id="1-add-the-original-repo-as-an-upstream-remote">1. Add the original repo as an upstream remote</h4>
+<pre><code>// check your upstream repos
+git remote -v
+
+origin  https://github.com/tylermaran/PaidWarn.git (fetch)
+origin  https://github.com/tylermaran/PaidWarn.git (push)
+
+// Ok that&#39;s just my fork, I&#39;ll need to add the original
+git remote add upstream https://github.com/ZeeshanZulfiqarAli/PaidWarn.git
+
+// And to check it worked
+git remote -v
+
+origin          https://github.com/tylermaran/PaidWarn.git (fetch)
+origin          https://github.com/tylermaran/PaidWarn.git (push)
+upstream        https://github.com/ZeeshanZulfiqarAli/PaidWarn.git (fetch)
+upstream        https://github.com/ZeeshanZulfiqarAli/PaidWarn.git (push)
+</code></pre>
+<h4 id="2-make-sure-your-repo-is-up-to-date">2. Make sure your repo is up to date</h4>
+<pre><code>// Fetch the upstream changes
+git fetch upstream
+
+// should see something like this from the parent repo
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 656 bytes | 65.00 KiB/s, done.
+From https://github.com/ZeeshanZulfiqarAli/PaidWarn
+</code></pre>
+<p>We can pull changes into your local branch, and then push up changes to our repo.</p>
+<pre><code>// Note we&#39;re pulling from &#39;upstream&#39;
+git pull upstream main
+
+// Note we&#39;re pushing to &#39;origin&#39;
+git push origin main
+</code></pre>
+<p>Or we can just merge the branch</p>
+<pre><code>git merge upstream/main
+</code></pre>
+<h4 id="3-open-a-pull-request">3. Open a pull request</h4>
+<p>This is as far as we go from the command line. Unless you want to install the <code>Hub</code> CLI from GitHub (<a href="https://hub.github.com/">https://hub.github.com/</a>).</p>
+<p>Otherwise go back to <strong>Step 2</strong> from the GitHub UI instructions.</p>
+<h2 id="5-incorporate-feedback-and-be-patient">5. Incorporate Feedback (and be patient)</h2>
+<p>Alright! Your changes are out there and ready for production!</p>
+<p>YEA RIGHT.</p>
+<p><img src="./assets/mutombo.gif" alt="mutombo"></p>
+<h3 id="time-for-the-code-review">Time for the code review</h3>
+<p>First things first. Get all of the automatic checks pass. This may be a linting check (not matching style guidelines), maybe you forgot to write a corresponding test, or maybe your changes broke something else in the application.</p>
+<p>You can reach out for help if you&#39;re stuck on some of these checks. But try your best to get the checks passing before requesting a review. Because 99% of the time that review is gonna be &quot;fix your tests&quot;.</p>
+<p><img src="./assets/review_required.png" alt="review_required"></p>
+<h3 id="be-patient">Be patient</h3>
+<p>The maintainers may not be able to review your code immediately. It could take days, weeks, or months. This part goes a lot more smoothly if you reach out in advance to discuss the feature/fix.</p>
+<p>And remember, the vast majority of maintainers are doing this for free in their spare time.</p>
+<p>You know what you can do in your spare time? Find another open issue and keep contributing.</p>
+<h3 id="accept-feedback">Accept feedback</h3>
+<p><em>The best code is consistent and solves the problem at hand</em></p>
+<p>Maybe you disagree with some feedback you&#39;ve received. And maybe you&#39;re right! Perhaps the existing class method is clunky and your fix would have been an improvement.</p>
+<p>At the end of the day it&#39;s the maintainer&#39;s codebase.</p>
+<h3 id="keep-the-pull-requests-readable">Keep the Pull Requests readable</h3>
+<p>Especially as your first contribution. Focus on solving exactly the problem at hand, and try not to touch any unrelated code.</p>
+<p><img src="./assets/review_please.jpg" alt="review_please"></p>
+<h2 id="6-merge-and-deploy">6. Merge and deploy!</h2>
+<p>Your code is in and ready to go! Call your mom, put it on your resume, go on a podcast. You&#39;re officially an open source contributor.</p>
+<p><strong>Now do it again</strong></p>
+<p>This part is really important. Repos get tons of <em>fly-by contributors</em>. Sneak in, fix a typo, never show up again.</p>
+<p>And at the end of the day, it&#39;s harder on maintainers to review those pull requests than to just fix the typo themselves. Making small contributions is fine to get started, but the best thing you can do is become a repeat contributor.</p>
+<p>Find a project you care about, and make repeat contributions. You&#39;ll make friends, learn a ton about different workflows, and you&#39;ll be contributing to tools that other people can use.</p>
+
+	</article>
+	<footer>
+	
+	</footer>
+	</body>
+	</html>
+	

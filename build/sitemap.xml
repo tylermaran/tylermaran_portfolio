@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 		<url>
 			<loc>www.tylermaran.com</loc>
-			<lastmod>2023-04-02</lastmod>
+			<lastmod>2023-05-27</lastmod>
 		</url>
 	
+			<url>
+				<loc>www.tylermaran.com/12-companies-hiring-fortran-developers-in-2022.html</loc>
+				<lastmod>2022-05-12</lastmod>
+			</url>
+		
+			<url>
+				<loc>www.tylermaran.com/7-tips-for-junior-engineers.html</loc>
+				<lastmod>2022-03-10</lastmod>
+			</url>
+		
 			<url>
 				<loc>www.tylermaran.com/about.html</loc>
 				<lastmod>2023-01-12</lastmod>
@@ -15,7 +25,22 @@
 			</url>
 		
 			<url>
+				<loc>www.tylermaran.com/how-to-build-a-simple-developer-portfolio-to-get-hired.html</loc>
+				<lastmod>2022-04-26</lastmod>
+			</url>
+		
+			<url>
+				<loc>www.tylermaran.com/how-to-contribute-to-open-source.html</loc>
+				<lastmod>2022-05-03</lastmod>
+			</url>
+		
+			<url>
 				<loc>www.tylermaran.com/ideas.html</loc>
 				<lastmod>2023-03-24</lastmod>
+			</url>
+		
+			<url>
+				<loc>www.tylermaran.com/worst-time-date-selectors-in-the-world.html</loc>
+				<lastmod>2022-04-12</lastmod>
 			</url>
 		</urlset>

@@ -1,0 +1,162 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	
+	<!-- Base meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="7 tips for your first tech job" />
+	<meta name="language" content="english" />
+	<meta name="title" content="Stop calling yourself a Junior engineer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- OpenGraph -->
+	<meta property="og:description" content="7 tips for your first tech job" />
+	<meta property="og:image" content="https://compassionate-saha-53a9e6.netlify.app/assets/no-idea-dog.png" />
+	<meta property="og:site_name" content="tyler" />
+	<meta property="og:title" content="Stop calling yourself a Junior engineer" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="7-tips-for-junior-engineers.html" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="7 tips for your first tech job" />
+	<meta name="twitter:image" content="https://compassionate-saha-53a9e6.netlify.app/assets/no-idea-dog.png" />
+	<meta name="twitter:title" content="Stop calling yourself a Junior engineer" />
+	
+	<link rel="stylesheet" href=./assets/style.css>
+	<title>Stop calling yourself a Junior engineer</title>
+	</head>
+	<body>
+	<article>
+	<p><small>Published 2022-03-10</small>
+<img src="./assets/no-idea-dog.png" alt="Markdown to HTMl"></p>
+<h1 id="stop-calling-yourself-a-junior-engineer">Stop calling yourself a Junior Engineer</h1>
+<p style="text-align:center; font-style: italic; font-size: larger">Seven tips for <span style="text-decoration: line-through">Junior</span> Engineers</p>
+
+<p>&nbsp;</p>
+<p>It happened! After months of studying data structures and cramming LeetCode problems you land that first dev job!
+Only to discover that rather than <em>reversing linked lists</em>, you&#39;re reviewing pull requests and tracking tickets in Jira.</p>
+<p>&nbsp;</p>
+<p>In fact, the only linked-list you&#39;re likely to see is <code>Git</code>, and you never covered <em>rebasing</em> or all the weird branching strategies your company may use.</p>
+<p>It&#39;s a common culture shock when you pivot from <strong>studying for a dev job</strong> vs <strong>working your first dev job</strong>. And I constantly see developers reaching out for advice on navigating their first few months at a new job.</p>
+<p>Take a breather. Remember, working your first dev job is <em>WAY</em> easier than getting one. But to help smooth the transition, I&#39;ve compiled a list of 7 habits that really help a new developer get up to speed.</p>
+<h3 id="1-practice-asynchronous-communication">1. Practice Asynchronous Communication</h3>
+<p>Phrase questions and responses in a detailed way that doesn&#39;t require your teammate to be online.</p>
+<p>❌ &quot;Hey can I ask you a question?&quot;</p>
+<p>✔ &quot;Hey what port are we running the email server on?&quot;</p>
+<p>When you&#39;re heads down on a problem, these little Slack pings can really break your focus. Asynchronous communication allows teammates to answer questions at their own pace.</p>
+<h3 id="2-ask-for-help-when-stuck-but-try-first">2. Ask for help when stuck (but try first)</h3>
+<blockquote>
+<p><small>11:50 AM</small></p>
+<p>Hey what port does the email server run on?</p>
+<p><small>11:52 AM</small></p>
+<p>Oh nevermind it&#39;s in the docs (:</p>
+</blockquote>
+<p>This is the one I see people get wrong the most. It&#39;s a fine balance between <b>spinning your wheels</b> on an unsolvable problem and being <b>too quick to ask questions</b>. Sometimes you just need a couple hours to figure out a problem, and other times you&#39;ll spend days on a question that would take your teammate 5 minutes to answer.</p>
+<br>
+<i>How much time should I spend?</i> Hard to say. Over time you'll develop better judgement on these decisions. If your team has a point based system, maybe try an hour per point?
+
+<ul>
+<li><code>1pt story</code> =&gt; spend an hour before asking for help</li>
+<li><code>8pt story</code> =&gt; take a day to dive in before reaching out</li>
+</ul>
+<p>Most often I see new engineers err on the side of caution, and spin their wheels for days when they should be asking for help. Your teammates are there to help you, so reach out (<em>asynchronously</em>)!</p>
+<h3 id="3-log-your-work">3. Log your work</h3>
+<p>Work in a way that doesn&#39;t require 1 on 1 time to explain what you&#39;ve been up to. Progress updates, setbacks, blockers should all be visible without your teammates needing to reach out directly.</p>
+<p>Try looking at your stories from a teammate or Project Manager&#39;s perspective.</p>
+<blockquote>
+<p>Can I quickly see where you are in the process?</p>
+<p>If I&#39;m waiting for you to submit a fix, how will I know when you&#39;re done?</p>
+<p>When are your changes ready to pull down?</p>
+</blockquote>
+<p>The specifics of reporting will depend on your company&#39;s workflow, but it never hurts to:</p>
+<ol>
+<li><p><strong>Make your Pull Requests readable</strong></p>
+<ul>
+<li>Describe the ticket, and your implementation.</li>
+<li>Write better commit messages.</li>
+<li>Include links to relevant code / blockers.</li>
+</ul>
+</li>
+<li><p><strong>Update Jira (or whatever task tool you use)</strong></p>
+<ul>
+<li>SCRUM tools are only as good as the data they&#39;re given. Keep your stories up to date, highlight any blockers, and give realistic time frames.</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-git-is-your-friend">4. Git is your friend</h3>
+<p><strong>First</strong>, make sure you understand your company&#39;s <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">git flow</a>.</p>
+<blockquote>
+<p>Do we branch off of dev? The latest release? When do we create an epic? Do we merge to the feature branch or release branch?</p>
+</blockquote>
+<p>Every company is going to be different here, as the &quot;best git strategy&quot; is still a fiercely debated topic.</p>
+<p>&nbsp;</p>
+<p><strong>Second</strong>, brush up on git! You&#39;ll need it.</p>
+<p>Have a bunch of half finished work, but need to jump on another branch real quick? <code>git stash</code></p>
+<pre><code>// Add all the current files and push it to the stash
+git add .
+git stash
+
+// Do whatever you need to do
+git checkout some-other-branch
+
+// Go right back to where you were
+git checkout original-branch
+git stash pop
+</code></pre>
+<p>Forgot to checkout a new branch and already committed to <code>main</code>?</p>
+<pre><code>On branch main
+Your branch is 1 commit ahead of origin/main 🤦‍♂️
+
+// Create a new branch (WITHOUT the -b flag)
+git branch the-proper-branch
+
+// Reset main to the head
+git reset HEAD~ --hard
+
+// Switch over to your new branch with all your changes
+git checkout the-proper-branch
+</code></pre>
+<p>Maybe take a few hours to peruse the official docs: <a href="https://git-scm.com/doc">https://git-scm.com/doc</a></p>
+<p>Or for emergencies, check out <a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></p>
+<h3 id="5-document-your-onboarding-flow">5. Document your onboarding flow</h3>
+<p>99% of the time, you&#39;re gonna run into some problems onboarding.</p>
+<ul>
+<li>Missing secret keys</li>
+<li>API readme is out of date</li>
+<li>They forgot to add you to the dev server</li>
+</ul>
+<p>Write these things down!</p>
+<p>Updating READMEs is an invaluable skill. And one that always often gets pushed to the backburner. This is a great contribution you can make on day #1 at your new company.</p>
+<p>And the next time your company hires someone, you&#39;ll be able to make their process that much easier.</p>
+<h3 id="6-offer-fresh-perspective">6. Offer fresh perspective</h3>
+<p>Don&#39;t underestimate your voice in planning/architecture decisions. You may not understand all the minutiae of the challenge at hand, but you help steer the conversation in the right direction.</p>
+<ul>
+<li>&quot;Which users are affected by this bug?&quot;</li>
+<li>&quot;Does this need to be refactored right now?&quot;</li>
+<li>&quot;What is the smallest step we can take in the right direction?&quot;</li>
+</ul>
+<p>If a solution sounds too complex, <i>maybe it is</i>? Spend enough time on a problem and you&#39;re likely to develop tunnel vision. Having a fresh set of eyes can be immensely helpful. So speak up!</p>
+<h3 id="7-finally-stop-calling-yourself-a-junior-engineer">7. Finally, stop calling yourself a Junior engineer</h3>
+<p>This one is a bit subjective. But I see this question come up a lot:</p>
+<pre><code>&quot;How do I stand out as a junior engineer?&quot;
+&quot;How can I be the best junior engineer?&quot;
+</code></pre>
+<p>And I hate it. For me, this comes down to confidence, and the level of emphasis you place on your job title.</p>
+<p>Your company will have a ton of different names for the job.</p>
+<blockquote>
+<p>L1, L2, L3, L4, SWE I, SWE II, Junior Dev, Senior Dev, Tech Lead, Team Lead, Principal, Architect, etc.</p>
+</blockquote>
+<p>Now I&#39;m not advocating that you start calling yourself <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>. Or only apply to Principal Engineer roles.</p>
+<p>But you don&#39;t need to wrap <em><em>&quot;Junior Engineer&quot;</em></em> around your whole professional identity. Of course you won&#39;t know all there is to know about programming. But neither does anyone else at your company!</p>
+<p>&nbsp;</p>
+<p>You&#39;ve landed the job! The hard part is over. And a great way to advance from the Junior Engineer role, is to cross out the <del>Junior</del>.</p>
+
+	</article>
+	<footer>
+	
+	</footer>
+	</body>
+	</html>
+	
